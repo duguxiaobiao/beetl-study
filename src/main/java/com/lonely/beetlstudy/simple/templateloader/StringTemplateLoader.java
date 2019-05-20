@@ -52,7 +52,7 @@ public class StringTemplateLoader {
         parasMap.put("name", "beetl");
 
         //使用针对 字符串模板资源加载的使用快速使用
-        String result = StringTemplateSingleton.convertToMessage("hello,${}name}", parasMap);
+        String result = StringTemplateSingleton.convertToMessage("hello,${name}", parasMap);
         System.out.println(result);
     }
 
